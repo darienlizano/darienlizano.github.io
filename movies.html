@@ -46,17 +46,16 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Loan Prediction Model</h1>
+										<h1>Movie Industry Correlation Project</h1>
 									</header>
 									<ul class="icons">
 										<li><a href="https://github.com/darienlizano" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 										<li><a href="https://www.linkedin.com/in/darien-lizano-8005b917a/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 									</ul>
-									<span class="image main"><img src="images/fico_notpaid_plot.png" alt="" /></span>
 									<h3>Project Overview</h3>
-									<p>In this project, I am using data from LendingClub.com, specifically from the years 2007-2010. I will be classifying and predicting whether or not the borrower paid back their loan in full.</p>
+									<p>This project consists of finding correlations using movie industry data from <a href="https://www.kaggle.com/danielgrijalvas/movies">kaggle.com</a>. I wanted to explore is if there is a high correlation between a movie's gross revenue and their budget.</p>
 									<ul class="actions">
-										<li><a href="https://github.com/darienlizano/LendingClub_Predict" class="button">View Project</a></li>
+										<li><a href="https://github.com/darienlizano/movies" class="button">View Project</a></li>
 									</ul>
 								</div>
 							</section>
@@ -71,31 +70,32 @@
 						<!-- Three -->
 							<section id="three">
 								<div class="inner">
-									<h3>Building Predictor Model</h3>
-									<p>I created a single Decision Tree Model and a Random Forest Model to determine which model performs the best. Before doing so, I transformed the 'purpose' (categorical) column into a dummy variable. Then I split my data into training and test sets by a test size of 30%.</p>
+									<h3>Data Cleaning</h3>
+									<p>It was important to convert the budget and gross variables from float64 data types into integer data types for my analysis. I also created a corrected year column derived from the released column as a string data type.</p>
 									<ul class="actions">
-										<li><a href="https://github.com/darienlizano/LendingClub_Predict/blob/main/lc_eda.ipynb" class="button">View Code</a></li>
+										<li><a href="https://github.com/darienlizano/movies/blob/main/movie_corr_proj.ipynb" class="button">View Code</a></li>
 									</ul>
-								</div>
-							</section>
-						<!-- Four -->
-							<section id="four">
-								<div class="inner">
-									<h3>Model Performance</h3>
-									<p>After running my models, the Random Forest outperformed the Decision Tree. Although the Random Forest Model's accuracy was not 90% or above, it is still a decent measurement which can be used with caution.</p>
-									<p>The Decision Tree scored an accuracy of 74%, whereas the Random Forest scored an accruacy of 84%.</p>
 								</div>
 							</section>
 						<!-- Five -->
 							<section id="five">
 								<div class="inner">
-									<h3>Exploratory Analysis</h3>
-									<p>I performed EDA across variables. Below are some highlights of my visualizations</p>
-									<span class="image main"><img src="images/fico_notpaid_hist.png" alt="" /></span>
-									<span class="image main"><img src="images/fico_jointplot.png" alt="" /></span>
-									<span class="image main"><img src="images/lc_corrmap.png" alt="" /></span>
+									<h3>Findingss</h3>
+									<p>Gross and Budget had the highest correlation (pearson score of 0.71).</p>
+									<p>Pictures production company has the highest gross in comparison to all other companies.</p>
+									<p>Movies rated PG-13 earned more gross revenue than any other ratings.</p>
+
 								</div>
 							</section>
+						<!-- Four -->
+						<section id="four">
+							<div class="inner">
+								<h3>Exploratory Data Analysis </h3>
+								<p>I performed exploratory data analysis including regression plots, correlation plots, strip plots, and scatterplots. Below are a few highlights of my visualizations.</p>
+								<span class="image main"><img src="images/budget_gross_reg.png" alt="" /></span>
+								<span class="image main"><img src="images/movies_stripplot.png" alt="" /></span>
+							</div>
+						</section>
 					</div>
 
 				<!-- Contact -->
